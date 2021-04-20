@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+        <a href="">Store</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact us
+            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 0L17.4676 8.03913L26.3393 9.32827L19.9196 15.5859L21.4351 24.4217L13.5 20.25L5.5649 24.4217L7.08037 15.5859L0.660737 9.32827L9.53245 8.03913L13.5 0Z" fill="#9EFF96"/>
+            </svg>
+        </a>
+        </nav>
+      <button class="toggle-nav-btn"></button>
+    </header>
+
+    <script>
+      const btn = document.querySelector(".toggle-nav-btn");
+      const nav = document.querySelector(".nav");
+
+      btn.onclick = function () {
+        if (nav.classList.contains("active")) {
+          nav.classList.remove("active");
+        } else {
+          nav.classList.add("active");
+        }
+      };
+    </script>
+
+    <main class="main">
+        <div class="main-blue-block"></div>
+        <div class="main-pink-block"></div>
+        <div class="main-yellow-block"></div>
+    </main>
+    <footer class="footer"></footer>   
+</body>
+</html>
